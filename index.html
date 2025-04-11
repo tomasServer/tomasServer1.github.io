@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Distribuidora Nova - Productos de calidad para tu negocio en Sucre">
+    <title>Distribuidora Nova</title>
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/nova.png" alt="logo">
+        </div>
+        <h1>𝓓𝓘𝓢𝓣𝓡𝓘𝓑𝓤𝓘𝓓𝓞𝓡𝓐 𝓝𝓞𝓥𝓐</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#productos">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#tabueno">Ta Bueno</a></li>
+                    <li><a href="#doritos">Nachos</a></li>
+                    <li><a href="#granola">Granola</a></li>
+                </ul>
+            </li>
+            <li><a href="#pedidos">Pedidos</a></li>
+        </ul>
+        <ul class="derecha">
+            <li><a href="#login" id="login-link">Ingresar</a></li>
+            <li><a href="#admin-panel" id="admin-link" style="display: none;">Admin</a></li>
+            <li><a href="#" id="cerrar-sesion-nav" style="display: none;">Cerrar Sesión</a></li>
+        </ul>
+    </nav> 
+
+    <div id="nosotros" class="divi">
+        <div class="body1">
+            <h2 class="title">Bienvenido</h2>
+            <div class="descripcion">
+                <p class="texto">Somos la distribuidora líder en Sucre, ofreciendo los mejores productos para tu negocio con la calidad y servicio que  se mereces.</p>
+            </div>
+        </div>
+    
+        <div class="informaciones">
+            <div class="info">
+                <i class="fas fa-truck fa-3x" style="color: #0891b2; margin-bottom: 1rem;"></i>
+                <h3>Entregas Seguras</h3>
+                <p>Servicio de distribución se realiza por zonas en toda la ciudad de Sucre.
+                    Reserve sus pedidos :)</p>
+            
+            </div>
+            
+            <div class="info">
+                <i class="fas fa-medal fa-3x" style="color: #0891b2; margin-bottom: 1rem;"></i>
+                <h3>Calidad Garantizada</h3>
+                <p>Todos nuestros productos cuentan con garantia. ningun producto le llegara dañado o vencido</p>
+            </div>
+            
+            <div class="info">
+                <i class="fas fa-bounce fa-8x" style="color: #0891b2; margin-bottom: 1rem;"></i>
+                <h3>Horario Flexible</h3>
+                <p>De 7am-3pm se realiza la distribucion.</p>
+            </div>
+        </div>
+    
+        <div class="imagenes">
+            <img src="imagenes/tabuenoNegro.jpg" alt="Productos destacados">
+            <a href="#tabueno" class="botonPrincipal">Ver Productos</a>
+        </div>
+
+    
+        <div class="cuadro">
+            <h2 style="color: #0891b2; text-align: center; margin-bottom: 1.5rem;">Nuestros Productos</h2>
+            <div class="seccionCuadros">
+                <div class="cuadrito">
+                    <h3 style="color: #0891b2; margin-bottom: 1rem;">TaBueno</h3>
+                    <p>Deliciosos snacks para todos los gustos. Variedad de sabores y presentaciones.</p>
+                    <a href="#tabueno" style="color: #0891b2; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: bold;">Ver más →</a>
+                </div>
+                
+                <div class="cuadrito">
+                    <h3 style="color: #0891b2; margin-bottom: 1rem;">Nachos</h3>
+                    <p>Los mejores nachos con sabores intensos y crujientes para disfrutar.</p>
+                    <a href="#doritos" style="color: #0891b2; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: bold;">Ver más →</a>
+                </div>
+                
+                <div class="cuadrito">
+                    <h3 style="color: #0891b2; margin-bottom: 1rem;">Granola</h3>
+                    <p>Opciones saludables con la mejor granola para un desayuno nutritivo y energético.</p>
+                    <a href="#granola" style="color: #0891b2; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: bold;">Ver más →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+        
+    <div id="tabueno" class="contenido">
+        <section class="seccion">
+            <h3>Información de todos nuestros productos de la marca TaBueno</h3>
+        </section>
+        <table id="tablaProductos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Imagen</th>
+                    <th>Unidades</th>
+                    <th>Precio</th>
+                    <th>Pedido</th> <!-- Quitamos la columna "Agregar" -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TaBueno 17gr</td>
+                    <td><img src="imagenes/tabueno de 17gr.jpeg" alt="Tabueno 17gr"></td>
+                    <td>12</td>
+                    <td>10 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="TaBueno 17gr" data-precio="10"></td>
+                </tr>
+                <tr>
+                    <td>TaBueno 80gr</td>
+                    <td><img src="imagenes/tabueno 80gr.jpeg" alt="Tabueno 80gr"></td>
+                    <td>1</td>
+                    <td>4 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="TaBueno 80gr" data-precio="4"></td>
+                </tr>
+                <tr>
+                    <td>TaBueno 150gr</td>
+                    <td><img src="imagenes/tabueno 150gr.jpeg" alt="Tabueno 150gr"></td>
+                    <td>1</td>
+                    <td>8 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="TaBueno 150gr" data-precio="8"></td>
+                </tr>
+                <tr>
+                    <td>TB Churrasco 26gr</td>
+                    <td><img src="imagenes/churrasco26gr.jpeg" alt=">TB Churrasco 26gr"></td>
+                    <td>12</td>
+                    <td>16.50 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="TB Churrasco 26gr" data-precio="16.50"></td>
+                </tr>
+                <tr>
+                    <td>TB Churrasco 100gr</td>
+                    <td><img src="imagenes/churrasco100gr.jpeg" alt="TB Churrasco 100gr"></td>
+                    <td>1</td>
+                    <td>7.5 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="TB Churrasco 100gr" data-precio="7.5"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="agregar" onclick="agregarProductosSeleccionados()">agregar</button>
+    </div>
+    <div id="doritos" class="contenido">
+        <section class="seccion">
+            <h3>Informacion de nuestros productos Doritos</h3>
+        </section>
+        <table id="tablanachos">
+            <tr>
+                <th>Producto</th>
+                <th>Imagen</th>
+                <th>Unidades</th>
+                <th>Precio</th>
+                <th>Pedido</th>
+            </tr>
+            <tr>
+                <td>Nacho Salado 200gr</td>
+                    <td><img src="imagenes/nacho.jpg" alt="Nacho Nax Salado 200gr"></td>
+                    <td>1</td>
+                    <td>8 bs</td>
+                    <td><input type="number" class="cantidad" min="1" value="0" data-producto="Nacho Nax Salado 200gr" data-precio="8"></td>
+            </tr>
+            <tr>
+                <td>Nacho Extremo 200gr</td>
+                <td><img src="imagenes/nacho2.jpg" alt="Nachos Extremos 200gr"></td>
+                <td>1</td>
+                <td>15 bs</td>
+                <td><input type="number" class="cantidad" min="1" value="0" data-producto="Nachos Extremos 200gr" data-precio="15"></td>
+            </tr>
+        </table>
+        <button class="agregar" onclick="agregarProductosSeleccionados()">agregar</button>
+
+    </div>
+    <div id="granola" class="contenido">
+        <section class="seccion">
+            <h3>Informacion de nuestros productos de Granola</h3>
+        </section>
+        <table id="tablagranola">
+            <tr>
+                <th>Producto</th>
+                <th>Imagen</th>
+                <th>Unidades</th>
+                <th>Precio</th>
+                <th>Pedido</th>
+            </tr>
+            <tr>
+                <td>Granola SanCristobal pequeña </td>
+                <td><img src="imagenes/granola.jpeg" alt="granola"></td>
+                <td>1</td>
+                <td>4 bs</td>
+                <td><input type="number" class="cantidad" min="1" value="0" data-producto="Granola Pequeña" data-precio="4"></td>
+           </tr>
+            <tr>
+                <td>Granola SanCristobal grande </td>
+                <td><img src="imagenes/granola.jpeg" alt="granola"></td>
+                <td>1</td>
+                <td>5 bs</td>
+                <td><input type="number" class="cantidad" min="1" value="0" data-producto="Granola Grande" data-precio="5"></td>
+            </tr>
+        </table>
+        <button class="agregar" onclick="agregarProductosSeleccionados()"><i class="fas fa-shopping-cart"></i>Agregar Productos</button>
+    </div> 
+
+    <div id="pedidos" class="contenido">
+        <div class="contenedor-pedidos">
+            <div class="info-usuario">
+                <p><strong>Cliente: </strong> <span id="pedido-nombre"></span></p>
+                <p><strong>Dirección: </strong> <span id="pedido-direccion"></span></p>
+            </div>
+
+            <table id="tabla-pedido" class="tabla-pedidos">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-end"><strong>TOTAL:</strong></td>
+                        <td id="total-pedido">0.00 Bs</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        
+            <div class="acciones-pedido">
+                <button id="enviar-pedido" class="btn-enviar">Enviar Pedido</button>
+                <button id="limpiar-pedido" class="btn-limpiar">Limpiar Todo</button>
+                <button id="cerrar-sesion" class="btn-cerrar-sesion">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" class="formulario">
+        <h2> 
+            <img src="imagenes/Captura.JPG"
+                 alt="Icono" width="40" height="40">
+            <br> ingresa tu cuenta
+        </h2>
+        <form id="loginForm">
+            <input type="text" id="numeroLogin"  placeholder="Usuario" required>
+            <input type="password" id="contrasenaLogin"  placeholder="Contraseña" required>
+            
+            <br>
+            <button type="submit" class="btn-login">Iniciar Sesión</button>
+          
+            
+             <button type="reset" onclick="window.location.hash='registrarse'"> REGISTRARSE </button>      
+           
+            <p id="respuesta"></p>
+        </form>
+    </div>
+    <div id="registrarse" class="formulario">
+    <form id="registroClienteForm">
+        <section class="section-main">
+
+        </section>
+        <div class="registro">
+            <p>Correo o numero de celular</p>
+            <input type="text" id="numero"  placeholder ="" required><br>
+            <p>Ingrese una contraseña </p>
+            <input type="password" id="contrasena"  placeholder="contraseña" required><br>
+            <p>Ingrese nuevamente</p>
+            <input type="password" id="contrasena2"  placeholder="contraseña" required><br>
+            <p>Nombre Completo</p>
+            <input type="text" id="nombre" placeholder="nombre" required><br>
+            <p>Ubicacion del local o tienda</p>
+            <input type="text" id="ubicacion" placeholder="ubicacion" required><br>
+            <button type="submit" class="btn-registro" id="btn-registro">Registrarse</button>
+        </div>
+    </form>
+</div>
+
+
+    <section id="admin-panel" class="section">
+        <div class="container">
+            <h2>Panel de Administración</h2>
+            
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="ventas">Ventas</button>
+                <button class="tab-btn" data-tab="usuarios">Usuarios</button>
+                <button class="tab-btn" data-tab="productos">Productos</button>
+            </div>
+            
+            <div class="tab-content active" id="tab-ventas">
+                <div id="historial-ventas">
+                    <!-- Sales will be displayed here -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-usuarios">
+                <div id="lista-usuarios">
+                    <!-- Users will be displayed here -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-productos">
+                <div id="lista-productos">
+                    <!-- Products will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <footer>&#169; 2025 Nova Distribución. Todos los derechos reservados.</footer>
+        <!-- Core Scripts -->
+        <script src="js/almacenamiento.js"></script>
+        <script src="js/imagen.js"></script>
+        <script src="js/pedido.js"></script>
+        <script src="js/login.js"></script>
+        
+        <!-- Additional Scripts -->
+        <script src="js/proyecto.js"></script>
+        <script src="js/cerrarSesion.js"></script>
+        <!-- Remove server.js reference - it's a backend file, not for browser -->
+        
+        <!-- Module Scripts -->
+        <script type="module" src="js/ventas.js"></script>
+        <script type="module" src="js/admin.js"></script>
+        
+        <script>
+            // Add event listeners instead of inline onclick
+            document.addEventListener('DOMContentLoaded', function() {
+                // Product buttons
+                document.querySelectorAll('.agregar').forEach(button => {
+                    button.addEventListener('click', agregarProductosSeleccionados);
+                });
+                
+                // Order actions
+                const enviarPedidoBtn = document.getElementById('enviar-pedido');
+                if (enviarPedidoBtn) {
+                    enviarPedidoBtn.addEventListener('click', enviarPedido);
+                }
+                
+                const limpiarPedidoBtn = document.getElementById('limpiar-pedido');
+                if (limpiarPedidoBtn) {
+                    limpiarPedidoBtn.addEventListener('click', function() {
+                        pedido = [];
+                        guardarPedido();
+                        actualizarTablaPedidos();
+                        mostrarAlerta('Pedido limpiado', 'info');
+                    });
+                }
+                
+                // Session management
+                const cerrarSesionBtns = document.querySelectorAll('#cerrar-sesion, #cerrar-sesion-nav');
+                cerrarSesionBtns.forEach(btn => {
+                    btn.addEventListener('click', cerrarSesion);
+                });
+                
+                // Check login status on page load
+                verificarSesion();
+            });
+            
+            // Function to check login status and update UI
+            function verificarSesion() {
+                const usuario = JSON.parse(localStorage.getItem('usuarioActual'));
+                const loginLink = document.getElementById('login-link');
+                const cerrarSesionNav = document.getElementById('cerrar-sesion-nav');
+                const adminLink = document.getElementById('admin-link');
+                
+                if (usuario) {
+                    // User is logged in
+                    if (loginLink) loginLink.style.display = 'none';
+                    if (cerrarSesionNav) cerrarSesionNav.style.display = 'block';
+                    
+                    // Show admin link if user is admin
+                    if (adminLink && usuario.isAdmin) {
+                        adminLink.style.display = 'block';
+                    }
+                    
+                    // Update user info in orders section
+                    const nombreElement = document.getElementById('pedido-nombre');
+                    const direccionElement = document.getElementById('pedido-direccion');
+                    
+                    if (nombreElement && direccionElement) {
+                        nombreElement.textContent = usuario.nombre || 'No especificado';
+                        direccionElement.textContent = usuario.ubicacion || 'No especificada';
+                    }
+                } else {
+                    // No user logged in
+                    if (loginLink) loginLink.style.display = 'block';
+                    if (cerrarSesionNav) cerrarSesionNav.style.display = 'none';
+                    if (adminLink) adminLink.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>
