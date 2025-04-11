@@ -1,0 +1,45 @@
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.formulario h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.formulario input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0e7490;
+}
+
+.formulario p {
+    color: #0d1b2a;
+}
+#registrarse .p{
+   text-align: left;
+}
+
